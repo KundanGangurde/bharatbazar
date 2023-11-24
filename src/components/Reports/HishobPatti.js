@@ -32,7 +32,7 @@ const AddDetails = () => {
   };
 
   const handleBhavChange = (event) => {
-    setBhav(event.target.value);
+    setBhav(event.target.value); 
   };
 
   const handleTotalChange = (event) => {
