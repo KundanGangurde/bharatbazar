@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button, Paper } from "@mui/material";
 
 const VyapariMastar = () => {
   const inputStyle = {
@@ -8,7 +8,15 @@ const VyapariMastar = () => {
     borderRadius: "10px",
   };
   return (
-    <div>
+    <Paper
+      elevation={9}
+      style={{
+        marginLeft: "150px",
+        padding: "15px",
+        marginTop: "80px",
+        marginRight: "150px",
+      }}
+    >
       <div>
         <Box
           container
@@ -40,7 +48,8 @@ const VyapariMastar = () => {
               type="text"
               varient="outlined"
               required
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label=" गाव / एरिया"
@@ -53,7 +62,8 @@ const VyapariMastar = () => {
               label="दूरध्वनी / मोबाईल नंबर"
               type="number"
               varient="outlined"
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label="संपूर्ण पत्ता"
@@ -66,7 +76,8 @@ const VyapariMastar = () => {
               label="हवाला / ग्यारंटी घेणाऱ्याचे नाव"
               type="text"
               varient="outlined"
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label="हवाला / ग्यारंटी घेणाऱ्याचा नंबर"
@@ -96,7 +107,7 @@ const VyapariMastar = () => {
           </Button>
         </Box>
       </div>
-    </div>
+    </Paper>
   );
 };
 

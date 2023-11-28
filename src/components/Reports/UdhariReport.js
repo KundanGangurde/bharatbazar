@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Paper } from "@mui/material";
 
 const UdhariReport = () => {
   return (
-    <div>
+    <Paper
+      elevation={9}
+      style={{
+        marginLeft: "150px",
+        padding: "15px",
+        marginTop: "80px",
+        marginRight: "150px",
+      }}
+    >
       
-    </div>
-  )
-}
+    </Paper>
+  );
+};
 
-export default UdhariReport
+export default UdhariReport;

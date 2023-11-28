@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Typography, TextField, Button } from "@mui/material";
+import {Box} from "@mui/system";
 
 const AreaMastar = () => {
   const inputStyle = {
@@ -8,8 +9,9 @@ const AreaMastar = () => {
     borderRadius: "10px",
   };
   return (
-    <div>
-      <div>
+    <div
+    >
+      <>
         <Box
           container
           component="form"
@@ -18,9 +20,10 @@ const AreaMastar = () => {
             height: "auto",
             m: 3,
             p: 3,
-            boxShadow: "0 0 400px 1px",
+            boxShadow: "0 0 20px 0.1px",
             textAlign: "center",
             borderRadius: "10px",
+            marginTop: "50px",
           }}
         >
           <Typography variant="h5" sx={{ mb: "40px", mt: "20px" }}>
@@ -63,7 +66,7 @@ const AreaMastar = () => {
             रद्द करा
           </Button>
         </Box>
-      </div>
+      </>
     </div>
   );
 };

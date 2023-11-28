@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button, Paper } from "@mui/material";
 
 const MalacheMastar = () => {
   const inputStyle = {
@@ -8,7 +8,15 @@ const MalacheMastar = () => {
     borderRadius: "10px",
   };
   return (
-    <div>
+    <Paper
+      elevation={9}
+      style={{
+        marginLeft: "150px",
+        padding: "15px",
+        marginTop: "80px",
+        marginRight: "150px",
+      }}
+    >
       <div>
         <Box
           container
@@ -24,7 +32,7 @@ const MalacheMastar = () => {
           }}
         >
           <Typography variant="h5" sx={{ mb: "40px", mt: "20px" }}>
-          मालाचे मास्टर
+            मालाचे मास्टर
           </Typography>
           <div>
             <TextField
@@ -40,7 +48,8 @@ const MalacheMastar = () => {
               type="text"
               varient="outlined"
               required
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label=" कमिशन "
@@ -53,7 +62,8 @@ const MalacheMastar = () => {
               label="मार्केट फी"
               type="number"
               varient="outlined"
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label="हमाली"
@@ -83,7 +93,7 @@ const MalacheMastar = () => {
           </Button>
         </Box>
       </div>
-    </div>
+    </Paper>
   );
 };
 

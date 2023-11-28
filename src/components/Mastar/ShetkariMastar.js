@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button, Paper } from "@mui/material";
 
 const ShetkariMastar = () => {
   const inputStyle = {
@@ -8,7 +8,15 @@ const ShetkariMastar = () => {
     borderRadius: "10px",
   };
   return (
-    <div>
+    <Paper
+      elevation={9}
+      style={{
+        marginLeft: "150px",
+        padding: "15px",
+        marginTop: "80px",
+        marginRight: "150px",
+      }}
+    >
       <div>
         <Box
           container
@@ -40,7 +48,8 @@ const ShetkariMastar = () => {
               type="text"
               varient="outlined"
               required
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label=" गाव / एरिया"
@@ -52,7 +61,8 @@ const ShetkariMastar = () => {
               label="दूरध्वनी / मोबाईल नंबर"
               type="number"
               varient="outlined"
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label="बँकेचे नाव"
@@ -64,7 +74,8 @@ const ShetkariMastar = () => {
               label="अकाउंट नंबर"
               type="text"
               varient="outlined"
-            /><br/>
+            />
+            <br />
             <TextField
               sx={inputStyle}
               label="IFSC Number"
@@ -94,7 +105,7 @@ const ShetkariMastar = () => {
           </Button>
         </Box>
       </div>
-    </div>
+    </Paper>
   );
 };
 
