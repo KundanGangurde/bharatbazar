@@ -1,0 +1,10 @@
+.boxContainer {
+  margin-top: "20px";
+}
+
+.box {
+  display: "none";
+  border: "1px solid #ccc";
+  padding: "10px";
+  margin-top: "10px";
+}

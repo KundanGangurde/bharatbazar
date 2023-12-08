@@ -64,12 +64,11 @@ const CashReceipt = () => {
                 12/12/2012
               </td>
               <td style={{ border: "1px solid grey", padding: "8px" }}>5000</td>
-              <td style={{ border: "1px solid grey", padding: "8px" }}>0</td>
+              <td contentEditable="true" style={{ border: "1px solid grey", padding: "8px" }}>0</td>
             </tr>
           </tbody>
         </table>
         <br />
-
         <button
           style={{
             border: "2px solid grey",
@@ -77,6 +76,7 @@ const CashReceipt = () => {
             margin: "8.5px",
             borderRadius: "10px",
             fontWeight: "900",
+            marginLeft: "80%",
           }}
         >
           जोडा

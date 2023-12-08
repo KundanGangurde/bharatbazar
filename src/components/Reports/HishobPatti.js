@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Typography, Paper } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const AddDetails = () => {
   const [info, setInfo] = useState();
@@ -67,6 +68,11 @@ const AddDetails = () => {
     setDetails(updatedDetails);
   };
 
+  const home = useNavigate();
+  const handleRedirect = () => {
+    home('/')
+  }
+
   return (
     <Paper
       elevation={9}
@@ -80,7 +86,7 @@ const AddDetails = () => {
       <div>
         <div style={{ marginLeft: "50px" }}>
           <Typography variant="h6" sx={{ mr: "5px" }}>
-            हिशोब पट्टी क्रमांक :{" "}
+            हिशोब पट्टी क्रमांक :
             <input style={{ width: "100px" }} type="number" />
             <TextField
               sx={{ ml: "310px" }}
@@ -327,6 +333,7 @@ const AddDetails = () => {
               borderRadius: "10px",
               fontWeight: "900",
             }}
+            onClick={handleRedirect}
           >
             बाहेर
           </button>
